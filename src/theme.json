@@ -1,0 +1,40 @@
+{
+  "light": {
+    "primary": "#6200EE",
+    "secondary": "#03DAC6",
+    "background": "#FFFFFF",
+    "surface": "#F5F5F5",
+    "error": "#B00020",
+    "onPrimary": "#FFFFFF",
+    "onSecondary": "#000000",
+    "onBackground": "#000000",
+    "onSurface": "#000000",
+    "onError": "#FFFFFF",
+    "kanbanTodo": "#2196F3",
+    "kanbanInProgress": "#FF9800",
+    "kanbanDone": "#4CAF50",
+    "urgentImportant": "#FFCDD2",
+    "notUrgentImportant": "#C8E6C9",
+    "urgentNotImportant": "#FFE0B2",
+    "notUrgentNotImportant": "#E0E0E0"
+  },
+  "dark": {
+    "primary": "#BB86FC",
+    "secondary": "#03DAC6",
+    "background": "#121212",
+    "surface": "#1E1E1E",
+    "error": "#CF6679",
+    "onPrimary": "#000000",
+    "onSecondary": "#000000",
+    "onBackground": "#FFFFFF",
+    "onSurface": "#FFFFFF",
+    "onError": "#000000",
+    "kanbanTodo": "#1976D2",
+    "kanbanInProgress": "#F57C00",
+    "kanbanDone": "#388E3C",
+    "urgentImportant": "#C62828",
+    "notUrgentImportant": "#2E7D32",
+    "urgentNotImportant": "#EF6C00",
+    "notUrgentNotImportant": "#424242"
+  }
+}

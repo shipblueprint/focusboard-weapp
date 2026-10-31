@@ -1,0 +1,18 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "focusboard-weapp",
+  "description": "FocusBoard - Kanban & Eisenhower Matrix Task Manager",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "compileHotReLoad": true,
+    "postcss": true,
+    "preloadWebviewDelta": true,
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.3.1",
+  "srcMiniprogramRoot": "dist/"
+}

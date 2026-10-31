@@ -1,0 +1,192 @@
+.analytics-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.analytics-header {
+  padding: 32px;
+  background-color: #6200EE;
+}
+
+.analytics-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.analytics-subtitle {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 8px;
+}
+
+.analytics-content {
+  flex: 1;
+  padding: 24px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.summary-card {
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.summary-card-title {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.summary-card-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+
+.progress-card {
+  background-color: #1E1E1E;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.progress-label {
+  font-size: 28px;
+  color: #4CAF50;
+  font-weight: bold;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.card {
+  background-color: #1E1E1E;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #424242;
+}
+
+.card-row:last-child {
+  border-bottom: none;
+}
+
+.card-label {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.card-value.success {
+  color: #4CAF50;
+}
+
+.card-value.warning {
+  color: #FF9800;
+}
+
+.card-value.danger {
+  color: #EF5350;
+}
+
+.divider {
+  height: 1px;
+  background-color: #424242;
+  margin: 24px 0;
+}
+
+.subsection-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.distribution-bar {
+  margin-bottom: 16px;
+}
+
+.bar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.bar-label {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bar-value {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.bar-track {
+  height: 16px;
+  background-color: #424242;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-text {
+  font-size: 32px;
+  color: #BB86FC;
+}
+
+.toast {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #323232;
+  padding: 24px 48px;
+  border-radius: 8px;
+  z-index: 2000;
+}
+
+.toast-text {
+  font-size: 28px;
+  color: #FFFFFF;
+}

@@ -1,0 +1,312 @@
+.kanban-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.kanban-header {
+  padding: 16px;
+  background-color: #6200EE;
+}
+
+.kanban-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.kanban-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 4px;
+}
+
+.kanban-board {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  overflow-x: auto;
+}
+
+.kanban-column {
+  width: 280px;
+  min-width: 280px;
+  height: 100%;
+  margin-right: 8px;
+  background-color: #2D2D2D;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s;
+}
+
+.kanban-column.drag-over {
+  background-color: #3D3D3D;
+  border: 2px dashed #BB86FC;
+}
+
+.column-header {
+  padding: 12px 16px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-title-row {
+  display: flex;
+  align-items: center;
+}
+
+.column-title-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.column-count {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 8px;
+}
+
+.add-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn-text {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.column-content {
+  flex: 1;
+  padding: 8px;
+}
+
+.task-item {
+  background-color: #424242;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #616161;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+}
+
+.task-item:active {
+  cursor: grabbing;
+}
+
+.task-item.dragging {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.task-item.completed-task {
+  opacity: 0.6;
+  background-color: #2E7D32;
+  border-color: #388E3C;
+}
+
+.task-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.priority-flag {
+  color: #F44336;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.task-title {
+  font-size: 14px;
+  color: #FFFFFF;
+  flex: 1;
+}
+
+.task-title.strikethrough {
+  text-decoration: line-through;
+  color: #BDBDBD;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.task-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.task-btn-icon {
+  font-size: 12px;
+  color: #9E9E9E;
+}
+
+.task-btn-icon.active {
+  color: #F44336;
+}
+
+.priority-btn .task-btn-icon {
+  color: #9E9E9E;
+}
+
+.priority-btn .task-btn-icon.active {
+  color: #F44336;
+}
+
+.edit-btn .task-btn-icon {
+  color: #2196F3;
+}
+
+.delete-btn .task-btn-icon {
+  color: #F44336;
+}
+
+.completed-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #424242;
+}
+
+.completed-header {
+  font-size: 12px;
+  color: #9E9E9E;
+  margin-bottom: 8px;
+}
+
+.empty-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.empty-text {
+  color: #757575;
+  font-size: 12px;
+}
+
+.loading-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-text {
+  color: #BB86FC;
+  font-size: 16px;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background-color: #2D2D2D;
+  border-radius: 12px;
+  padding: 24px;
+  width: 280px;
+}
+
+.dialog-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.dialog-input-wrapper {
+  margin-bottom: 16px;
+}
+
+.dialog-input-native {
+  width: 100%;
+  padding: 12px;
+  background-color: #424242;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.dialog-input-native::placeholder {
+  color: #9E9E9E;
+}
+
+.dialog-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.dialog-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-btn.cancel-btn {
+  background-color: #424242;
+  margin-right: 8px;
+}
+
+.dialog-btn.save-btn {
+  background-color: #6200EE;
+}
+
+.dialog-btn-text {
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+}
+
+.toast {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #323232;
+  padding: 12px 24px;
+  border-radius: 8px;
+  z-index: 1001;
+}
+
+.toast-text {
+  color: #FFFFFF;
+  font-size: 14px;
+}

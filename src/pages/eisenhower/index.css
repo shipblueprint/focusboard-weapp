@@ -1,0 +1,259 @@
+.eisenhower-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.eisenhower-screen.light {
+  background-color: #F5F5F5;
+}
+
+.eisenhower-header {
+  padding: 32px;
+  background-color: #6200EE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.eisenhower-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.eisenhower-subtitle {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 8px;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-btn,
+.transfer-btn {
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+.add-btn {
+  background-color: #03DAC6;
+}
+
+.add-btn-text {
+  font-size: 28px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.transfer-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.transfer-btn-text {
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.eisenhower-board {
+  flex: 1;
+  padding: 16px;
+}
+
+.quadrant-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  height: 100%;
+  min-height: 1200px;
+}
+
+.eisenhower-quadrant {
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.eisenhower-quadrant.drag-over {
+  border: 3px dashed #FFFFFF;
+  transform: scale(1.02);
+}
+
+.quadrant-header {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quadrant-name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.quadrant-subtitle {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 4px;
+}
+
+.quadrant-count {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 8px;
+}
+
+.quadrant-content {
+  flex: 1;
+}
+
+.task-wrapper {
+  margin-bottom: 8px;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.task-wrapper.dragging {
+  opacity: 0.5;
+}
+
+.empty-quadrant {
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.empty-quadrant-text {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-text {
+  font-size: 32px;
+  color: #BB86FC;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  width: 600px;
+  padding: 32px;
+  background-color: #1E1E1E;
+  border-radius: 16px;
+}
+
+.dialog-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.dialog-content {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+}
+
+.dialog-input {
+  width: 100%;
+  padding: 24px;
+  font-size: 28px;
+  background-color: #2D2D2D;
+  border: 2px solid #424242;
+  border-radius: 8px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+}
+
+.checkbox-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 48px;
+}
+
+.checkbox-label {
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-left: 16px;
+}
+
+.dialog-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.dialog-btn {
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 28px;
+  margin-left: 16px;
+}
+
+.dialog-btn.cancel {
+  background-color: transparent;
+  border: 2px solid #757575;
+  color: #757575;
+}
+
+.dialog-btn.submit {
+  background-color: #6200EE;
+  border: none;
+  color: #FFFFFF;
+}
+
+.toast {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #323232;
+  padding: 24px 48px;
+  border-radius: 8px;
+  z-index: 2000;
+}
+
+.toast-text {
+  font-size: 28px;
+  color: #FFFFFF;
+}

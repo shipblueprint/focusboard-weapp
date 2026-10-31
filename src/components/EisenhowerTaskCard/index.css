@@ -1,0 +1,60 @@
+.eisenhower-task-card {
+  padding: 24px;
+  margin: 8px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #9E9E9E;
+}
+
+.eisenhower-task-card.completed {
+  opacity: 0.7;
+}
+
+.card-header {
+  margin-bottom: 12px;
+}
+
+.priority-indicator {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.priority-text {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.task-title {
+  font-size: 28px;
+  line-height: 1.4;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.task-title.strikethrough {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.action-icon {
+  font-size: 32px;
+  color: #2196F3;
+}
+
+.action-icon.delete {
+  color: #EF5350;
+}

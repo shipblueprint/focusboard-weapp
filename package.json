@@ -1,0 +1,48 @@
+{
+  "name": "focusboard-weapp",
+  "version": "1.0.0",
+  "description": "FocusBoard - Kanban & Eisenhower Matrix Task Manager",
+  "template": "taro-template",
+  "scripts": {
+    "dev:weapp": "taro build --type weapp",
+    "dev:h5": "taro build --type h5",
+    "build:weapp": "taro build --type weapp",
+    "build:h5": "taro build --type h5",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "@tarojs/components": "^4.2.0",
+    "@tarojs/plugin-framework-react": "^4.2.0",
+    "@tarojs/plugin-platform-weapp": "^4.2.0",
+    "@tarojs/react": "^4.2.0",
+    "@tarojs/runtime": "^4.2.0",
+    "@tarojs/taro": "^4.2.0",
+    "@tarojs/webpack5-runner": "^4.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.0",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "rtaro-ui": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-react": "^7.28.5",
+    "@tarojs/cli": "^4.2.0",
+    "@tarojs/plugin-platform-h5": "^4.2.0",
+    "@types/react": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "babel-preset-taro": "^4.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-taro": "^4.2.0",
+    "eslint-plugin-react": "^7.32.0",
+    "typescript": "^5.0.0",
+    "webpack": "^5.88.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
